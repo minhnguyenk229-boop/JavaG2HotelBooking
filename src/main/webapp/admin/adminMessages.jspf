@@ -1,0 +1,12 @@
+<%
+String adminMsg = (String) session.getAttribute("adminMsg");
+String adminErr = (String) session.getAttribute("adminErr");
+if (adminMsg != null) {
+%><div class="alert success"><%=adminMsg%></div><%
+    session.removeAttribute("adminMsg");
+}
+if (adminErr != null) {
+%><div class="alert error"><%=adminErr%></div><%
+    session.removeAttribute("adminErr");
+}
+%>

@@ -1,0 +1,54 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+<div class="nav">
+
+    <div class="brand">
+        <img class="logo-g2"
+             src="${pageContext.request.contextPath}/assets/images/g2-logo.png"
+             alt="logo">
+        <span>G2 Hotel</span>
+    </div>
+
+    <div>
+
+        <a href="${pageContext.request.contextPath}/index.jsp">
+            Trang chủ
+        </a>
+
+        <a href="${pageContext.request.contextPath}/about.jsp">
+            Giới thiệu
+        </a>
+
+        <a href="${pageContext.request.contextPath}/rooms.jsp">
+            Phòng
+        </a>
+
+        <% if(session.getAttribute("userId")==null){ %>
+
+            <a href="${pageContext.request.contextPath}/login.jsp">
+                Đăng nhập
+            </a>
+
+            <a href="${pageContext.request.contextPath}/register.jsp">
+                Đăng ký
+            </a>
+
+        <% } else { %>
+
+            <a href="${pageContext.request.contextPath}/my-bookings.jsp">
+                Đơn của tôi
+            </a>
+
+            <a href="${pageContext.request.contextPath}/change-password.jsp">
+                Đổi mật khẩu
+            </a>
+
+            <a href="${pageContext.request.contextPath}/logout">
+                Đăng xuất
+            </a>
+
+        <% } %>
+
+    </div>
+
+</div>

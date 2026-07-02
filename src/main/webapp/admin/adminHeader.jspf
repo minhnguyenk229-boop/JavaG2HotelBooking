@@ -1,0 +1,82 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+<%
+    Object role = session.getAttribute("role");
+
+    if(role == null ||
+       (!"ADMIN".equals(role) && !"EMPLOYEE".equals(role))) {
+
+        response.sendRedirect(
+            request.getContextPath()
+            + "/login.jsp?err=Vui lòng đăng nhập bằng tài khoản admin hoặc nhân viên"
+        );
+
+        return;
+    }
+%>
+
+<div class="nav">
+
+    <div class="brand">
+        <img class="logo-g2"
+             src="${pageContext.request.contextPath}/assets/images/g2-logo.png"
+             alt="logo">
+
+        <span>G2 Hotel - Quản trị</span>
+    </div>
+
+    <div>
+        <a href="${pageContext.request.contextPath}/index.jsp">
+            Website
+        </a>
+
+        <a href="${pageContext.request.contextPath}/logout">
+            Đăng xuất
+        </a>
+    </div>
+
+</div>
+
+<div class="admin-layout">
+
+    <aside class="side">
+
+        <h3>
+            Xin chào,
+            <%=session.getAttribute("name")%>
+        </h3>
+
+        <a href="dashboard.jsp">
+            Tổng quan
+        </a>
+
+        <a href="rooms.jsp">
+            Quản lý phòng
+        </a>
+
+        <a href="bookings.jsp">
+            Quản lý đặt phòng
+        </a>
+
+        <a href="customers.jsp">
+            Quản lý khách hàng
+        </a>
+
+        <a href="change-password.jsp">
+            Đổi mật khẩu
+        </a>
+
+        <% if ("ADMIN".equals(role)) { %>
+        <a href="revenue.jsp">
+            Quản lý doanh thu
+        </a>
+
+        
+        <a href="employees.jsp">
+            Tạo tài khoản cho nhân viên
+        </a>
+        <% } %>
+
+    </aside>
+
+    <main class="section">

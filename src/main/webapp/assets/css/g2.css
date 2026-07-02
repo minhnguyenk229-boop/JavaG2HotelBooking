@@ -1,0 +1,112 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,'Segoe UI',sans-serif;background:#f5f7fb;color:#1f2937}.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#071326;color:white;position:sticky;top:0;z-index:5}.brand{font-size:26px;font-weight:800;color:#f6c453}.nav a{color:white;text-decoration:none;margin-left:20px;font-weight:600}.hero{min-height:520px;background:linear-gradient(120deg,rgba(7,19,38,.82),rgba(7,19,38,.45)),url('../images/slider1.jpg') center/cover;display:flex;align-items:center;padding:40px 7%;color:white}.hero h1{font-size:58px;margin:0 0 12px}.hero p{font-size:20px;max-width:650px;line-height:1.6}.btn{display:inline-block;background:#0077b6!important;color:#ffffff!important;padding:12px 22px;border-radius:10px;text-decoration:none;border:0;font-weight:800;cursor:pointer;box-shadow:0 8px 18px rgba(0,119,182,.22)}.btn.dark{background:#071326!important;color:white!important;box-shadow:none!important}.section{padding:48px 7%}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}.card{background:white;border-radius:18px;box-shadow:0 12px 30px rgba(15,23,42,.08);overflow:hidden}.card img{width:100%;height:190px;object-fit:cover}.card-body{padding:20px}.price{color:#c08400;font-size:22px;font-weight:800}.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:#e8f7ef;color:#047857;font-weight:700}.badge.busy{background:#fee2e2;color:#b91c1c}.form{max-width:520px;margin:40px auto;background:white;padding:28px;border-radius:18px;box-shadow:0 12px 30px rgba(15,23,42,.1)}input,select,textarea{width:100%;padding:12px;margin:8px 0 16px;border:1px solid #d1d5db;border-radius:10px}table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden}th,td{padding:12px;border-bottom:1px solid #e5e7eb;text-align:left}th{background:#071326;color:white}.alert{padding:12px 7%;background:#ecfdf5;color:#047857}.err{padding:12px 7%;background:#fef2f2;color:#b91c1c}.footer{padding:28px 7%;background:#071326;color:white;margin-top:50px}.admin-layout{display:grid;grid-template-columns:240px 1fr;min-height:calc(100vh - 64px)}.side{background:#0b1b33;color:white;padding:25px}.side a{display:block;color:white;text-decoration:none;margin:14px 0;padding:11px;border-radius:10px}.side a:hover{background:#142d52}.qr{width:230px;height:230px;background:repeating-linear-gradient(45deg,#111 0 8px,#fff 8px 16px);border:12px solid white;box-shadow:0 8px 25px #0002;margin:auto}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}.stat{background:white;padding:24px;border-radius:16px;box-shadow:0 8px 25px #0001}.stat b{font-size:32px;color:#c08400}@media(max-width:760px){.hero h1{font-size:38px}.admin-layout{grid-template-columns:1fr}.side{position:static}.nav{flex-wrap:wrap}}
+
+.qr-img{width:260px;max-width:90%;border-radius:18px;background:#fff;padding:8px;box-shadow:0 10px 25px rgba(0,0,0,.35);object-fit:contain}
+.muted{color:#c9d1d9;font-size:14px;line-height:1.5}
+.alert,.err{max-width:700px;margin:24px auto 0;padding:14px 18px;border-radius:12px;font-weight:700;text-align:center}
+.alert{background:#16351f;color:#9df2b2;border:1px solid #2ea043}
+.err{background:#3d1f1f;color:#ffb4b4;border:1px solid #ff6b6b}
+
+.alert{margin:14px 0;padding:14px 16px;border-radius:12px;font-weight:700;background:#123524;color:#9ff3bd;border:1px solid #1f8f4d}.alert.success{background:#123524;color:#9ff3bd;border-color:#1f8f4d}.alert.error{background:#3b1717;color:#ffb4b4;border-color:#8f2f2f}
+
+.brand{display:flex;align-items:center;gap:12px}.logo-g2{width:42px;height:42px;object-fit:contain}.brand span{color:#f6c453}
+/* Checkout / Payment detail UI */
+.checkout-section{max-width:1180px;margin:0 auto;}
+.checkout-steps{display:flex;gap:14px;align-items:center;justify-content:center;margin-bottom:28px;color:#9aa3ad;font-weight:800;text-transform:uppercase;}
+.checkout-steps .active{color:#ffcc4d;}
+.checkout-layout,.payment-layout,.complete-layout{display:grid;grid-template-columns:1.7fr .9fr;gap:28px;align-items:start;}
+.checkout-card,.booking-summary,.complete-message{background:#171b1c;border-radius:18px;padding:28px;box-shadow:0 14px 36px rgba(0,0,0,.22);}
+.checkout-card h2,.booking-summary h2,.complete-message h2{margin-top:0;color:#e6e0d8;}
+.checkout-card label{display:block;margin-top:16px;margin-bottom:7px;font-weight:700;}
+.checkout-card input,.checkout-card textarea{width:100%;box-sizing:border-box;border:1px solid #777;border-radius:10px;background:#3b3b3b;color:white;padding:14px;font-size:16px;}
+.checkout-card textarea{min-height:110px;resize:vertical;}
+.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.summary-room{display:flex;gap:16px;align-items:flex-start;}
+.summary-room img{width:110px;height:90px;object-fit:cover;border-radius:12px;}
+.summary-room h3{margin:0 0 8px;color:#e6e0d8;font-size:18px;}
+.summary-room p{margin:5px 0;}
+.price-row{display:flex;justify-content:space-between;gap:12px;margin:14px 0;font-size:16px;}
+.price-row.total{font-size:19px;color:#ffcc4d;font-weight:900;border-top:1px solid #333;padding-top:14px;}
+.payment-options{margin:22px 0;}
+.radio-line{display:flex!important;gap:10px;align-items:center;margin:12px 0!important;font-weight:700!important;}
+.radio-line input{width:auto!important;}
+.full-btn{width:100%;text-align:center;}
+.payment-main{text-align:center;}
+.qr-box{display:flex;justify-content:center;margin:22px 0;}
+.payment-info-box{background:#101f34;border-radius:14px;padding:18px;text-align:left;margin:18px auto;max-width:520px;}
+.success-text{color:#5ee6a8;font-weight:800;}
+.note-text{color:#d7d7d7;}
+.detail-card .detail-row{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid #303030;padding:13px 0;}
+.detail-card .header-row{text-transform:uppercase;color:#e6e0d8;}
+.detail-card .total{font-size:20px;color:#ffcc4d;font-weight:900;}
+.complete-message{background:#f8fff9;color:#1c1c1c;}
+.complete-message h2{color:#0b8b55;font-size:20px;}
+.complete-message li{margin:12px 0;}
+@media(max-width:900px){.checkout-layout,.payment-layout,.complete-layout{grid-template-columns:1fr}.two-cols{grid-template-columns:1fr}.checkout-steps{flex-wrap:wrap}.summary-room{flex-direction:column}.summary-room img{width:100%;height:180px}}
+
+.filter-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;align-items:end;background:#151918;padding:22px;border-radius:16px;margin:18px 0 26px;box-shadow:0 8px 25px #0001}.filter-box label{display:block;margin-bottom:6px;font-weight:700}.filter-actions{display:flex;gap:12px;flex-wrap:wrap}.revenue-summary{margin:20px 0 32px}.stat-link{text-decoration:none;color:inherit;display:block}.stat-link small{display:block;margin-top:10px;color:#f6c453;font-weight:700}.muted{opacity:.75;font-size:14px}.revenue-stat b{line-height:1.25}h2{margin-top:34px}
+
+/* Cập nhật màu nút: đổi toàn bộ nút vàng sang xanh nước biển */
+.btn:not(.dark),
+button.btn:not(.dark),
+a.btn:not(.dark),
+input[type="submit"].btn:not(.dark){
+    background:#0077b6 !important;
+    color:#ffffff !important;
+    border:none !important;
+    box-shadow:0 8px 18px rgba(0,119,182,.22);
+}
+.btn:not(.dark):hover,
+button.btn:not(.dark):hover,
+a.btn:not(.dark):hover,
+input[type="submit"].btn:not(.dark):hover{
+    background:#0096c7 !important;
+    color:#ffffff !important;
+    transform:translateY(-1px);
+}
+.btn:not(.dark):active,
+button.btn:not(.dark):active,
+a.btn:not(.dark):active,
+input[type="submit"].btn:not(.dark):active{
+    background:#005f8f !important;
+    transform:translateY(0);
+}
+
+
+/* FORCE BLUE BUTTONS - cập nhật cuối cùng: tất cả nút vàng chuyển sang xanh nước biển */
+.btn:not(.dark),
+button.btn:not(.dark),
+a.btn:not(.dark),
+input[type="submit"].btn:not(.dark),
+.full-btn:not(.dark){
+    background:#0077b6 !important;
+    background-color:#0077b6 !important;
+    color:#ffffff !important;
+    border:none !important;
+    box-shadow:0 8px 18px rgba(0,119,182,.22) !important;
+}
+.btn:not(.dark):hover,
+button.btn:not(.dark):hover,
+a.btn:not(.dark):hover,
+input[type="submit"].btn:not(.dark):hover,
+.full-btn:not(.dark):hover{
+    background:#0096c7 !important;
+    background-color:#0096c7 !important;
+    color:#ffffff !important;
+}
+.btn:not(.dark):active,
+button.btn:not(.dark):active,
+a.btn:not(.dark):active,
+input[type="submit"].btn:not(.dark):active,
+.full-btn:not(.dark):active{
+    background:#005f8f !important;
+    background-color:#005f8f !important;
+    color:#ffffff !important;
+}
+.btn.dark,
+a.btn.dark,
+button.btn.dark,
+summary.btn.dark{
+    background:#071326 !important;
+    background-color:#071326 !important;
+    color:#ffffff !important;
+}
